@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassList</title>
+</head>
+<style>
+    .highlight {
+    color: blue;
+    font-size: 35px;
+}
+</style>
+<body>
+    <h1 id="title">Hello World</h1>
+    <img id="photo" src="old.jpg" alt="Old photo">
+</body>
+<script>
+    const heading = document.querySelector("#title");
+    heading.classList.add("highlight");
+    console.log(heading.classList.contains("highlight"));
+    heading.classList.remove("highlight");
+
+    const image = document.querySelector("#photo")
+    console.log(image.getAttribute("src"));
+
+    image.setAttribute("src" , "new.jpg");
+    console.log(image.getAttribute("src"));
+
+    image.setAttribute("alt" , "New Photo");
+    image.removeAttribute("alt");
+
+</script>
+</html>

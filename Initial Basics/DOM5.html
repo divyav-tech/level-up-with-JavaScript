@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element Using JS</title>
+</head>
+<style>
+    .highlight{
+        color: red;
+        background-color: yellow;
+    }
+</style>
+<body>
+    <div id="container"></div>
+</body>
+<script>
+    const container = document.querySelector("#container");
+    const heading = document.createElement("h2");
+
+    heading.textContent = "I created this using JavaScript!";
+
+    heading.classList.add("highlight");
+    container.append(heading);
+
+    const para = document.createElement("p");
+    para.textContent = "DOM is getting easier!";
+    container.append(para);
+</script>
+</html>

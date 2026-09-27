@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting Elements</title>
+</head>
+<body>
+    <div class="container">
+    <h1 id="title">My Website</h1>
+
+    <p class="text">First paragraph</p>
+    <p class="text">Second paragraph</p>
+
+    <button class="btn">One</button>
+    <button class="btn">Two</button>
+</div>
+</body>
+<script>
+    const heading = document.getElementById("title");
+    const paragraphs = document.getElementsByClassName("text");
+    const buttons = document.getElementsByTagName("button");
+    const para1 = document.querySelector(".text");
+    const allpara = document.querySelectorAll(".text");
+    const btns = document.querySelectorAll("button");
+    const title = document.querySelector("#title");
+</script>
+</html>

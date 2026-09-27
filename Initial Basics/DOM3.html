@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Text</title>
+</head>
+<body>
+    <h1 id="title">Welcome</h1>
+    <p id="message">Learning JavaScript</p>
+</body>
+<script>
+    const heading =  document.querySelector("#title");
+    heading.textContent = "DOM is Fun!!!";
+    heading.style.color = "blue";
+
+    const para = document.querySelector("#message");
+    para.textContent = "I am learning DOM manipulation.";
+    para.style.fontSize = "20px";
+</script>
+</html>

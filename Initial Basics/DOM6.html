@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Hello World</h1>
+
+    <button id="changeBtn">Change Text</button>
+    <button id="colorBtn">Change Color</button>
+
+    <input id="nameInput" placeholder="Enter your name">
+
+    <p id="output"></p>
+</body>
+<script>
+    const heading = document.querySelector("#title");
+    const changeBtn = document.querySelector("#changeBtn");
+    const colorBtn = document.querySelector("#colorBtn");
+    const input = document.querySelector("#nameInput");
+    const output = document.querySelector("#output");
+
+    changeBtn.addEventListener("click" , () =>{
+        heading.textContent = "JavaScript is Amazing!";
+    });
+
+    colorBtn.addEventListener("click" , () => {
+        heading.style.color = "blue";
+    });
+
+    input.addEventListener("input" , () => {
+        output.textContent = input.value;
+    });
+</script>
+</html>
